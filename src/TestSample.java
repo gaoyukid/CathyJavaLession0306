@@ -16,11 +16,7 @@ public class TestSample {
         //"+" 连接变量
 		//println 输出换行
 		
-		for(int x = 0;x<MAX_VALUE;++x){
-			System.out.print(x+"*"+x );//输出不换行
-			System.out.println("="+x*x );			
-			
-		}
+		IteratePrint.iteratePrint(MAX_VALUE);
 	}
 
 }
