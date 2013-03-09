@@ -5,21 +5,21 @@ public class TestSample {
 	/**
 	 * @param args
 	 */
+	public static int MAX_VALUE = 3;
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		//主方法，程序开始运行的起点
-		int no;
-		no=7;
-		System.out.println("this is number"+no);
-		System.out.println("I have "+no+" books");
+		int no = 7;
+		System.out.println("中文输入");
+		System.out.println("this is number: " + no);
+		System.out.println("I have "+ no +" books");
         //"+" 连接变量
 		//println 输出换行
 		
-    	int x;
-		for(x=0;x<3;x++){
+		for(int x = 0;x<MAX_VALUE;++x){
 			System.out.print(x+"*"+x );//输出不换行
 			System.out.println("="+x*x );			
-		
+			
 		}
 	}
 
