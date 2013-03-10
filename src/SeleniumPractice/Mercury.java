@@ -52,9 +52,12 @@ public class Mercury {
         	System.out.println("maybe some issues happened when open the flight finder page.");
         }
 
-        List<WebElement>TripType=webdriver.findElements(By.name("tripType" ));
+        List<WebElement>TripType=webdriver.findElements(By.xpath("//input[@name='tripType']"));
+		System.out.println("found triptype field");    
         for(WebElement item:TripType){
-        	if(item.getText().equals("oneway")){
+            String radiobuttontext=item.getAttribute("value");
+            System.out.println("---"+radiobuttontext+"---");  
+        	if(radiobuttontext.equals("oneway")){
         		item.click();
                 System.out.println("select one way as trip type successfully");
        	 }
